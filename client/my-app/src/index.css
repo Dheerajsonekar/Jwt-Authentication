@@ -167,10 +167,10 @@ span a {
 }
 
 .user-table {
-  width: 90%; /* Adjusted to fit within the screen */
+  width: 90%; 
   margin: 20px auto;
   border-collapse: collapse;
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  overflow-x: auto; 
 }
 
 .user-table th,
