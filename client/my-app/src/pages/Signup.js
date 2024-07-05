@@ -111,7 +111,7 @@ const Signup = () => {
             onChange={handleOnChange}
           />
         </div>
-        <button type="submit" onChange={handleSubmit}>Submit</button>
+        <button type="submit" onClick={handleSubmit}>Submit</button>
         <span>
           Already have an account? <Link to={"/login"}>Login</Link>
         </span>

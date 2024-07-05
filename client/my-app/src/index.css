@@ -1,4 +1,6 @@
-*,::before,::after{
+*,
+::before,
+::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -9,9 +11,10 @@ label {
   color: #656262;
 }
 
-html,body{
+html,
+body {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 body {
@@ -85,7 +88,12 @@ span a {
 .home_page {
   height: 100vh;
   width: 100vw;
-  background: #000;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(143, 187, 204, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   color: white;
   display: flex;
   justify-content: center;
@@ -115,13 +123,70 @@ span a {
   background-color: rgba(0, 212, 255, 1);
 }
 
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: fixed;
+  top: 0;
+}
 
-@media only screen and (max-width: 1200px){
-  .home_page{
+.username {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logout-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home_page {
     font-size: 1.5rem;
   }
   .home_page button {
     padding: 0.6rem 1rem;
     font-size: 1.5rem;
   }
+}
+
+.user-table {
+  width: 90%; /* Adjusted to fit within the screen */
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+
+.user-table tr:hover {
+  background-color: #ddd;
 }
