@@ -7,7 +7,7 @@ const Signup = () => {
     const navigate = useNavigate();
     const [inputValue, setInputValue] = useState({
         username: "",
-        dod: "",
+        dob: "",
         email: "",
         password: ""
     });

@@ -10,11 +10,13 @@ const userSchema = new mongoose.Schema({
     },
     dob: {
         type: Date,
+        required : [true, "date of birth is required"],
         
     },
     email:{
       type: String,
       required: [true, "email address is required"],
+
     },
   password: {
     type: String,
